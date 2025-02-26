@@ -4,6 +4,10 @@
 class R {
   const R._();
 
+  /// ![preview](file:///Users/maharajmadanmohan/Desktop/Development/assignments/appscrip_task_management/assets/illustration/dash_logo.png)
+  static const String ASSETS_ILLUSTRATION_DASH_LOGO_PNG =
+      'assets/illustration/dash_logo.png';
+
   /// ![preview](file:///Users/maharajmadanmohan/Desktop/Development/assignments/appscrip_task_management/assets/images/login.svg)
   static const String ASSETS_IMAGES_LOGIN_SVG = 'assets/images/login.svg';
 

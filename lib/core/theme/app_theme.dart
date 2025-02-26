@@ -46,6 +46,8 @@ class Themes {
         surfaceMode: FlexSurfaceMode.highScaffoldLowSurface,
         primary: const Color(0xFFF9B72F), // Orange Yellow
         secondary: const Color(0xFF5A05BA), // Violet
+        primaryLightRef: const Color(0xFFF9B72F),
+        secondaryLightRef: const Color(0xFF5A05BA),
         scaffoldBackground: const Color(0xFF000000), // Black
         blendLevel: 15,
         appBarStyle: FlexAppBarStyle.background,

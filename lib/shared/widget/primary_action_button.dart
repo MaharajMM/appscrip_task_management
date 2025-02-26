@@ -75,7 +75,7 @@ class PrimaryActionButton extends StatelessWidget {
                   : RoundedRectangleBorder(
                       borderRadius: borderRadius ?? BorderRadius.circular(30),
                     ),
-              backgroundColor: color,
+              backgroundColor: isLoading ? AppColors.violet.withOpacity(0.3) : color,
               minimumSize: freeSize
                   ? const Size(0, 0)
                   : Size(isTablet ? MediaQuery.of(context).size.width * 0.5 : double.infinity, 45),
@@ -85,7 +85,8 @@ class PrimaryActionButton extends StatelessWidget {
               AppText(
                 text: labelText.allWordsCapitilize(),
                 fontWeight: FontWeight.w600,
-                fontSize: fontSize ?? (isTablet ? 16 : 12),
+                color: fontColor ?? AppColors.grey200,
+                fontSize: fontSize ?? (isTablet ? 16 : 14),
               ).pOnly(left: 5),
             ].hStack(alignment: MainAxisAlignment.center),
           );

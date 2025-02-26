@@ -1,4 +1,5 @@
 import 'package:appscrip_task_management/bootstrap.dart';
+import 'package:appscrip_task_management/const/app_urls.dart';
 import 'package:appscrip_task_management/shared/api_client/dio/bad_certificate_fixer.dart';
 import 'package:appscrip_task_management/shared/api_client/dio/default_api_interceptor.dart';
 import 'package:appscrip_task_management/shared/api_client/dio/default_time_response_interceptor.dart';
@@ -13,7 +14,7 @@ import 'package:talker_dio_logger/talker_dio_logger.dart';
 final dioProvider = Provider.autoDispose<Dio>(
   (ref) {
     final dio = Dio();
-    dio.options.baseUrl = '';
+    dio.options.baseUrl = AppUrls.baseUrl;
     if (kDebugMode) {
       dio.interceptors.add(TimeResponseInterceptor());
       dio.interceptors.add(FormDataInterceptor());
